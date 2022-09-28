@@ -18,3 +18,13 @@ function clock(){
     document.getElementById("second").innerHTML=s
 }
 setInterval(clock,10);
+function dateofToday(){
+    const d=new Date();
+    var day=d.getDate();
+    var month=d.getMonth()+1;
+    var year=d.getFullYear();
+    document.getElementById("date").innerHTML=day
+    document.getElementById("month").innerHTML=month
+    document.getElementById("year").innerHTML=year
+}
+dateofToday()
